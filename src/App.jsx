@@ -1,13 +1,18 @@
 import { useState } from 'react'
-
+import Header from './components/Header.jsx'
+import Routing from './components/Routing.jsx'
 import './App.css'
+
 
 function App() {
 
 
   return (
     <>
-      <h1>Hi</h1>
+      <Header />
+      <main>
+        <Routing />
+      </main>
     </>
   )
 }
