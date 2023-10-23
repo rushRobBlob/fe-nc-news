@@ -54,7 +54,10 @@
     color: rgb(247, 194, 97);
 }
 
+
+
 .articleCard {
+    
     padding: 5px;
     display: flex;
     flex-direction: row;

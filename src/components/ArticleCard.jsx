@@ -6,9 +6,9 @@ function ArticleCard({ articles }) {
         <>
             <article className="articleContainer">
                 <ul>
-                    {articles.map((article) => {
+                    {articles.map((article, index) => {
                         return (
-                            <Link className="articleListLink" key={article.article_id}>
+                            <Link to={`/articles/${index + 1}`} className="articleListLink" key={article.article_id}>
                                 <li className="articleCard">
 
                                     <img className="articleImg" src={article.article_img_url} alt="" />
