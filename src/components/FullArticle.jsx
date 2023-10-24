@@ -1,9 +1,10 @@
-import { useParams, Link } from "react-router-dom";
+import { Routes, Route, useParams, Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { dateFormat } from '../utils/utils.js'
+import CommentCard from './CommentCard.jsx'
 
-function FullArticle({ articles }) {
+function FullArticle() {
     const { article_id } = useParams();
     const [article, setArticle] = useState(['hello'])
 
@@ -16,21 +17,32 @@ function FullArticle({ articles }) {
 
     }, []);
 
+
     return (
         <>
             <div className="fullArticleContainer">
                 <h1 className="fullArticleTitle">{article[0].title}</h1><br />
-                <p className="fullArticleDate">Posted: {dateFormat(article[0].created_at)}</p>
-
-
-                <p className="fullArticleUser">{article[0].author}</p>
+                <p className="fullArticleDate">Posted on: {dateFormat(article[0].created_at)}</p>
+                <p className="fullArticleAuth">by: <span className="fullArticleUser">{article[0].author}</span></p>
+                <br />
                 <br />
                 <img className="fullArticleImg" src={article[0].article_img_url} alt="" />
+                <br />
+                <br />
                 <p className="fullArticleBody">{article[0].body}</p>
                 <br />
-                <Link className="fullArticleComments"><div >Comments</div></Link>
+
                 <p>Votes: {article[0].votes}</p>
+
+                <br />
+
+                <h3 className="comments">Comments:</h3>
+                <br />
+                <CommentCard article_id={article_id} />
+
+
             </div>
+
         </>
     )
 

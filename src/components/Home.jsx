@@ -5,12 +5,12 @@ function Home({ articles }) {
 
     return (
         <>
-            <section>
+            <section className="homeHeader">
                 <h2>Welcome to NC News</h2>
                 <br />
                 <p>Your number 1 resource for all things Northcoders!</p>
                 <br />
-                <h3>Featured Articles</h3>
+                <h3 className="featArt">Featured Articles</h3>
                 <br />
                 <ArticleCard articles={featuredArticles} />
             </section>
