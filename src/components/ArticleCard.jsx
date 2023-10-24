@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 import { dateFormat } from '../utils/utils.js'
 
 function ArticleCard({ articles }) {
-    // console.log(articles[0].created_at.slice(0, 9));
+
     return (
         <>
             <article className="articleContainer">
