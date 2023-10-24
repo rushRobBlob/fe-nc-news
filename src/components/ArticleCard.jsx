@@ -5,20 +5,27 @@ function ArticleCard({ articles }) {
 
     return (
         <>
-            <article className="articleContainer">
+            <article>
                 <ul>
                     {articles.map((article, index) => {
                         return (
                             <Link to={`/articles/${article.article_id}`} className="articleListLink" key={article.article_id}>
-                                <li className="articleCard">
+                                <li>
+                                    <div className="articleContainer">
+                                        <div className="articleImgContainer">
+                                            <img className="articleImg" src={article.article_img_url} alt="" />
+                                        </div>
+                                        <div className="articleContentContainer">
+                                            <h4>{article.title}</h4>
+                                            <p className="articleUsername">{article.author}</p>
 
-                                    <img className="articleImg" src={article.article_img_url} alt="" />
-                                    <h4>{article.title}</h4>
-                                    <p className="articleUsername">{article.author}</p>
-                                    <p className="articleTopic">{article.topic}</p>
-                                    <p className="articleDate">Posted: {dateFormat(article.created_at)}</p>
-                                    <p className="articlesComments">Comments: {article.comment_count}</p>
-                                    <p className="articleVotes">Votes: {article.votes}</p>
+                                            <p className="articleDate">Posted: {dateFormat(article.created_at)}</p>
+
+                                            <p className="articleVotes">Votes: {article.votes}</p>
+
+                                        </div>
+
+                                    </div>
 
 
                                 </li>
