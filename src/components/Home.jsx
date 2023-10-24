@@ -1,7 +1,7 @@
 import ArticleCard from './ArticleCard.jsx'
 
 function Home({ articles }) {
-    const featuredArticles = articles.slice(0, 6)
+    const featuredArticles = articles.slice(6, 11)
 
     return (
         <>
