@@ -6,7 +6,7 @@ function ArticleCard({ articles }) {
     return (
         <>
             <article>
-                <ul>
+                <ul className="articleLayout">
                     {articles.map((article, index) => {
                         return (
                             <Link to={`/articles/${article.article_id}`} className="articleListLink" key={article.article_id}>
@@ -16,12 +16,17 @@ function ArticleCard({ articles }) {
                                             <img className="articleImg" src={article.article_img_url} alt="" />
                                         </div>
                                         <div className="articleContentContainer">
-                                            <h4>{article.title}</h4>
-                                            <p className="articleUsername">{article.author}</p>
+                                            <div className="titleContainer">
+                                                <h4 className="articleTitle">{article.title}</h4>
+                                            </div>
+                                            <div className="infoContainer">
+                                                <p className="articleUsername">{article.author}</p>
 
-                                            <p className="articleDate">Posted: {dateFormat(article.created_at)}</p>
+                                                <p className="articleDate">Posted: {dateFormat(article.created_at)}</p>
 
-                                            <p className="articleVotes">Votes: {article.votes}</p>
+                                                <p className="articleVotes">Votes: {article.votes}</p>
+                                            </div>
+
 
                                         </div>
 

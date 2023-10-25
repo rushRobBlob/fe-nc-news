@@ -12,8 +12,8 @@ function Home({ articles }) {
                 <br />
                 <h3 className="featArt">Featured Articles</h3>
                 <br />
-                <ArticleCard articles={featuredArticles} />
             </section>
+            <ArticleCard articles={featuredArticles} />
         </>
     )
 }

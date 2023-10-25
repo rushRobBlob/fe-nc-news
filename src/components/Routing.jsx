@@ -22,7 +22,7 @@ function Routing() {
     }, []);
 
     if (isLoading) {
-        return <h1>loading...</h1>
+        return <h1 className="loading">loading...</h1>
     } else {
         return (
 
