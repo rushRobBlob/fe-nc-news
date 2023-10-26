@@ -208,11 +208,60 @@
     font-size: small;
 }
 
+.commentForm {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin-bottom: 5px;;
+}
+
+.commentAdd {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    flex-direction: column;
+    padding:5px;
+    border: solid black 1px;
+    border-radius: 12px;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+}
+
+.commentlabel {
+    display: flex;
+    margin-right: 20px;
+}
+
+.commentBox {
+    height: 100px;
+}
+
+.commentHead {
+    margin-bottom: 5px;
+}
+
+.commentErr {
+    font-size: small;
+    color: red;
+}
+
+.postedCommentText {
+    color: rgb(187, 187, 187);
+}
+
+.unpostedCommentText {
+    color: black;
+}
+
 .voterContainer {
     display: flex;
     justify-content: center;
     
 }
+
+
 
 .voterBox {
     
