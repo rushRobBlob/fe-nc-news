@@ -2,9 +2,12 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { dateFormat } from "../utils/utils";
+import AddComment from './AddComment.jsx'
 
 function CommentCard({ article_id }) {
     const [comments, setComments] = useState([]);
+    const [isClicked, setIsClicked] = useState(false);
+
     useEffect(() => {
         axios.get(`https://nc-news-q2aj.onrender.com/api/articles/${article_id}/comments`).then(({ data }) => {
             const { comments } = data;
@@ -28,6 +31,9 @@ function CommentCard({ article_id }) {
                     )
                 })}
             </ul>
+
+
+            <AddComment article_id={article_id} />
         </>
     )
 }
