@@ -9,6 +9,10 @@
     background-color: rgb(40, 40, 40);
 } */
 
+.loading {
+    text-align: center;
+}
+
 .mainHeader {
     padding-top: 10%;
     
@@ -18,6 +22,8 @@
 }
 
 .mainNav {
+    display: flex;
+    
     background-color: black;
     overflow: hidden;
     position: fixed;
@@ -63,15 +69,62 @@
     margin-left: 23px;
 }
 
+.articleContainer {
+    
+    display: flex;
+    padding: 5px;
+    
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    border: solid black 1px;
+    border-radius: 12px;
+}
+
+.articleLayout {
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    display: flex;
+}
+
+.articleImageContainer {
+    display: flex;
+    margin-right: 20px;
+}
+
+.articleContentContainer {
+    margin-left: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 1%;
+}
+
+/* .articleTitle {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+} */
+
+.articleListLink {
+    width: 500px;
+}
 
 
 .articleUsername {
     color: rgb(247, 194, 97);
+    font-size: small;
+    
+}
+
+.articleDate, .articleVotes {
+    font-size: small;
 }
 
 
 
-.articleCard {
+/* .articleCard {
     
     padding: 5px;
     display: flex;
@@ -81,10 +134,11 @@
     margin-bottom: 25px;
     border: solid black 1px;
     border-radius: 12px;
-}
+} */
 
 .articleImg {
-    width: 200px;
+    width: 125px;
+    height: 100px;
     border-radius: 12px;
 }
 
@@ -151,9 +205,59 @@
 
 .commentText {
     color: rgb(94, 94, 94);
+    font-size: small;
+}
+
+.voterContainer {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.voterBox {
+    
+    width:fit-content;
+    color: white;
+    justify-content: space-between;
+    text-align: center;
+    padding: 10px;
+    border: solid rgb(33, 33, 191) 1px;
+    border-radius: 25px;
+    background-color: rgb(65, 65, 206);
+}
+
+.voterButton {
+    border: white;
+    color: rgb(65, 65, 206);
+    background-color: rgb(215, 215, 240);
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    border-radius: 12px;
+}
+
+.voteErr {
+    font-size: smaller;
 }
 
 
 
+@media (max-width: 320px) {
+     .articleUsername, .articleVotes {
+        display: none;
+     }
+     .articleImg {
+         width:100px;
+     }
 
+     .articleTitle {
+         font-size: small;
+     }
+
+     .articleDate {
+         color: rgb(92, 0, 92)
+     }
+}
 
