@@ -38,7 +38,7 @@ function FullArticle() {
                     <br />
 
 
-                    <Voter votes={article[0].votes} />
+                    <Voter votes={article[0].votes} article_id={article_id} />
                     <br />
 
                     <h3 className="comments">Comments:</h3>
