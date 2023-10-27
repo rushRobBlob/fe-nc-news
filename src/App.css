@@ -22,18 +22,20 @@
 }
 
 .mainNav {
-    display: flex;
+    display:flex;
     
+    width: 100%;
     background-color: black;
     overflow: hidden;
     position: fixed;
     top:0;
-    width: 100%;
+    list-style: none;
+    
 }
 
 .mainNavList {
     list-style-type: none;
-    float: left;
+    /* float: left; */
 }
 
 .mainNavListContact {
@@ -67,7 +69,10 @@
 
 .articlesAll {
     margin-left: 23px;
+    margin-bottom: 10px;
 }
+
+
 
 .articleContainer {
     
@@ -293,6 +298,63 @@
 
 
 
+.topicNav {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    margin-top: 10px;
+    margin-bottom: 2px;
+    height: 30px;
+    
+}
+
+.topicNav li {
+    flex-grow: 1;
+    text-align: center;
+    font-size: small;
+    
+}
+
+.topicNav li a {
+    color: black;
+    text-decoration: none;
+    border: solid black 1px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 6%;
+    padding-right: 6%;
+    margin: 2%;
+    border-radius: 14px;
+    transition: all 0.25s;
+}
+
+.topicButt:hover {
+    
+       color: white;
+       background-color: black;
+        box-shadow: 0 0.5em 0.5em -0.4em #939393;
+        
+        cursor: pointer;
+    }
+
+
+.topicContainer {
+    
+    padding: 5px;
+    
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    border: solid black 1px;
+    border-radius: 12px;
+}
+
+.topicHeading {
+    text-align: center;
+}
+
+
+
 @media (max-width: 320px) {
      .articleUsername, .articleVotes {
         display: none;
@@ -307,6 +369,21 @@
 
      .articleDate {
          color: rgb(92, 0, 92)
+     }
+
+     .mainNav {
+         flex-direction: column;
+        width: 100%;
+     }
+
+     .mainHeader {
+        margin-top: 35px;
+     }
+
+     
+
+     .mainNavListHide {
+         display: none;
      }
 }
 
