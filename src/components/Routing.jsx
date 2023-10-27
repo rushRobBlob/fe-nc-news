@@ -13,6 +13,7 @@ function Routing() {
     const [articles, setArticles] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
 
+
     useEffect(() => {
         setIsLoading(true);
         axios.get('https://nc-news-q2aj.onrender.com/api/articles').then(({ data }) => {

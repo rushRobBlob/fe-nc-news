@@ -23,8 +23,9 @@ function ArticleCard({ articles }) {
                                                 <p className="articleUsername">{article.author}</p>
 
                                                 <p className="articleDate">Posted: {dateFormat(article.created_at)}</p>
+                                                <span className="articleC">Comments: {article.comment_count}</span>
+                                                <span className="articleVotes">Votes: {article.votes}</span>
 
-                                                <p className="articleVotes">Votes: {article.votes}</p>
                                             </div>
 
 
