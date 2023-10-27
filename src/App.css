@@ -131,6 +131,12 @@
     margin-left: 30px;
 }
 
+.deleteComment {
+    display: flex;
+    justify-content: center;
+    margin-top: 4px;
+}
+
 
 
 
@@ -202,28 +208,47 @@
     
 }
 
+.articleDelete {
+    text-align: center;
+    color: rgb(233, 178, 75);
+    border: rgb(233, 178, 75) solid 1px;
+    width: fit-content;
+    margin: 20px;
+    padding: 30px;
+    
+    border-radius: 12px;
+}
+
+.deleteContainer {
+    display:flex;
+    justify-content: center;
+}
+
 .comments {
     margin-left: 65px;
 }
 
-.commentVotes {
-    margin-left: 40px;
-}
+.commentDateVotes {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 
-.commentDate {
-    margin-left: 5px;
 }
 
 .commentText {
     color: rgb(94, 94, 94);
     font-size: small;
+    margin-top: 15px;
 }
 
 .commentForm {
     display: flex;
     flex-direction: column;
     width: 75%;
-    margin-bottom: 5px;;
+    margin-bottom: 5px;
+    
 }
 
 .commentAdd {
