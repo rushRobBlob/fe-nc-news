@@ -4,6 +4,7 @@ import Home from './Home.jsx'
 import axios from 'axios';
 import Articles from './Articles.jsx'
 import FullArticle from './FullArticle.jsx'
+import TopicArticles from './TopicArticles.jsx'
 import CommentCard from './CommentCard.jsx'
 // import AboutUs from './AboutUs.jsx'
 
@@ -32,7 +33,7 @@ function Routing() {
                     <Route path="/home" element={<Home articles={articles} />} />
                     <Route path="/articles" element={<Articles articles={articles} />} />
                     <Route path="/articles/:article_id/*" element={<FullArticle />} />
-
+                    <Route path="/articles/topics/:topic" element={<TopicArticles />} />
                 </Routes>
             </>
         )
