@@ -1,10 +1,10 @@
 import { useState } from "react";
 import axios from "axios";
 
-function AddComment({ article_id }) {
+function AddComment({ article_id, isPosted, setIsPosted }) {
 
     const [commentText, setCommentText] = useState('');
-    const [isPosted, setIsPosted] = useState(false);
+
     const [buttonState, setButtonState] = useState(true)
     const [err, setErr] = useState(false);
 

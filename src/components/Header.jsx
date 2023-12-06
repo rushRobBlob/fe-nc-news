@@ -4,7 +4,7 @@ function Header() {
     return (
         <>
             <header>
-                <h1 className="mainHeader">NC News</h1>
+                <h1 className="mainHeader">.nosey</h1>
                 <Navbar />
             </header>
             <br /><br />
