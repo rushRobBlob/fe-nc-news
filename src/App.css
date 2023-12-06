@@ -15,7 +15,7 @@
 
 .mainHeader {
     padding-top: 10%;
-    
+    padding-right: 1.5%;
     background-color: black;
     color: white;
     text-align: right;
@@ -79,19 +79,27 @@
     display: flex;
     padding: 5px;
     
-    margin-left: 20px;
+    /* margin-left: 20px;
     margin-right: 20px;
-    margin-bottom: 25px;
+    margin-bottom: 25px; */
     border: solid black 1px;
     border-radius: 12px;
 }
 
 .articleLayout {
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
+    align-items: center;
     list-style: none;
     display: flex;
 }
+
+.articleLayout li {
+    width: 500px;
+    
+}
+
+
 
 .articleImageContainer {
     display: flex;
@@ -112,9 +120,7 @@
     white-space: nowrap;
 } */
 
-.articleListLink {
-    width: 500px;
-}
+
 
 
 .articleUsername {
@@ -136,6 +142,28 @@
     justify-content: center;
     margin-top: 4px;
 }
+
+
+.articleCard {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 600px;
+    height: 150px;
+    
+}
+
+.articleCard li {
+    transition: all .2s;
+    border-radius: 12px;
+    
+}
+
+.articleCard li:hover {
+    transform: translateY(-0.25em);
+    box-shadow: 13px 12px 18px -1px rgba(212,212,212,1);
+}
+
 
 
 
@@ -160,9 +188,12 @@
 }
 
 .articleListLink {
+    width: 400px;
     color: black;
     text-decoration: none;
 }
+
+
 
 
 
@@ -372,7 +403,7 @@
 .topicContainer {
     
     padding: 5px;
-    
+    height: 150px;
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 25px;
@@ -382,6 +413,7 @@
 
 .topicHeading {
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .sortBy {
