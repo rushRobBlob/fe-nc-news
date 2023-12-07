@@ -4,9 +4,9 @@ import TopicArticles from './TopicArticles.jsx'
 import { useState } from 'react';
 
 
-function Articles({ articles }) {
+function Articles({ articles, sortBy, setSortBy }) {
 
-    const [sortBy, setSortBy] = useState('dateNew')
+
 
     switch (sortBy) {
         case 'dateNew':

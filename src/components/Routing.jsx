@@ -12,7 +12,7 @@ import CommentCard from './CommentCard.jsx'
 function Routing() {
     const [articles, setArticles] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
-
+    const [sortBy, setSortBy] = useState('dateNew')
 
     useEffect(() => {
         setIsLoading(true);
@@ -32,9 +32,9 @@ function Routing() {
                 <Routes>
                     <Route path="/" element={<Home articles={articles} />} />
                     <Route path="/home" element={<Home articles={articles} />} />
-                    <Route path="/articles" element={<Articles articles={articles} />} />
+                    <Route path="/articles" element={<Articles sortBy={sortBy} setSortBy={setSortBy} articles={articles} />} />
                     <Route path="/articles/:article_id/*" element={<FullArticle />} />
-                    <Route path="/articles/topics/:topic" element={<TopicArticles />} />
+                    <Route path="/articles/topics/:topic" element={<TopicArticles sortBy={sortBy} setSortBy={setSortBy} />} />
                 </Routes>
             </>
         )
