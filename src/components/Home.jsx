@@ -6,9 +6,9 @@ function Home({ articles }) {
     return (
         <>
             <section className="homeHeader">
-                <h2>Welcome to NC News</h2>
+                <h2>Welcome to .nosey!</h2>
                 <br />
-                <p>Your number 1 resource for all things Northcoders!</p>
+                <p>Your number 1 resource for having a .nosey</p>
                 <br />
                 <h3 className="featArt">Featured Articles</h3>
                 <br />
