@@ -92,11 +92,12 @@
     align-items: center;
     list-style: none;
     display: flex;
+    gap: 1rem;
 }
 
 .articleLayout li {
     width: 500px;
-    
+    justify-self: unset;
 }
 
 
