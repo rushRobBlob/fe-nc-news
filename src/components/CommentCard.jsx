@@ -37,6 +37,7 @@ function CommentCard({ article_id }) {
     else {
         return (
             <>
+                <AddComment isPosted={isPosted} setIsPosted={setIsPosted} article_id={article_id} />
                 <ul>
                     {err ? <p>comment was not deleted...please try again</p> : null}
                     {comments.map((comment) => {
@@ -57,7 +58,7 @@ function CommentCard({ article_id }) {
                 </ul>
 
 
-                <AddComment isPosted={isPosted} setIsPosted={setIsPosted} article_id={article_id} />
+
             </>
         )
     }
