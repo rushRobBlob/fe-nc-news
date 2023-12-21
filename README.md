@@ -4,4 +4,4 @@ This project consolidated my making of a CRUD application from a front end persp
 
 Also please note that I am still working on this project and it should be viewed as work-in-progress.
 
-Link to hosted web app: https://nc-nosey-news.netlify.app/
+Hosted link: https://nc-nosey-news.netlify.app/
